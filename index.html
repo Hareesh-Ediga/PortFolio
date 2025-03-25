@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hareesh Ediga - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // Initialize EmailJS with your Public Key
+            emailjs.init("Rl5asp9WekbbOI_ik"); // Replace with your EmailJS User ID
+        })();
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Hareesh Ediga</h1>
+            <p>Full-Stack Developer | DevOps Enthusiast</p>
+            <nav>
+                <ul>
+                    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#skills"><i class="fas fa-laptop-code"></i> Skills</a></li>
+                    <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                    <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-- About Section -->
+<section id="about" class="section about">
+    <div class="container">
+        <h2><i class="fas fa-user"></i> About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p class="intro">Hello! I’m Hareesh Ediga, an IT enthusiast and engineering student with a flair for crafting innovative solutions. I’m skilled in <span class="highlight">full-stack development</span>, wielding tools like ReactJS, Spring Boot, and AWS, and I’m passionate about <span class="highlight">DevOps</span> and <span class="highlight">blockchain integration</span>. My journey blends creativity with technology to build impactful software.</p>
+                <p class="question">Curious to see who’s behind the code?</p>
+                <button id="show-photo-btn" class="reveal-btn">Yes, show me!</button>
+            </div>
+            <div class="photo-container">
+                <img src="Hareesh PassPhoto.png" alt="Hareesh Ediga" class="profile-photo" id="profile-photo">
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- Skills Section -->
+<section id="skills" class="section skills">
+    <div class="container">
+        <h2><i class="fas fa-laptop-code"></i> My Skills</h2>
+        <p class="subtitle">A comprehensive showcase of my technical and soft skills</p>
+
+        <!-- Programming Languages -->
+        <h3 class="skill-category">Programming Languages</h3>
+        <div class="skills-grid">
+            <div class="skill" data-note="Proficient in OOP and JVM-based applications">
+                <i class="fab fa-java"></i> Java
+            </div>
+            <div class="skill" data-note="Skilled in scripting, automation, and Django">
+                <i class="fab fa-python"></i> Python
+            </div>
+            <div class="skill" data-note="Experienced in dynamic web development">
+                <i class="fab fa-js-square"></i> JavaScript
+            </div>
+            <div class="skill" data-note="Strong foundation in low-level programming">
+                <i class="fas fa-code"></i> C
+            </div>
+            <div class="skill" data-note="Expert in systems programming and DSA">
+                <i class="fas fa-code"></i> C++
+            </div>
+            <div class="skill" data-note="Built semantic and responsive web pages">
+                <i class="fab fa-html5"></i> HTML
+            </div>
+        </div>
+
+        <!-- Frameworks and Technologies -->
+        <h3 class="skill-category">Frameworks and Technologies</h3>
+        <div class="skills-grid">
+            <div class="skill" data-note="Used for component-based frontend development">
+                <i class="fab fa-angular"></i> Angular.js
+            </div>
+            <div class="skill" data-note="Developed backend APIs with Spring">
+                <i class="fas fa-leaf"></i> Spring Boot
+            </div>
+            <div class="skill" data-note="Created web apps with Python framework">
+                <i class="fab fa-python"></i> Django
+            </div>
+            <div class="skill" data-note="Built modern UIs like payroll systems">
+                <i class="fab fa-react"></i> ReactJS
+            </div>
+            <div class="skill" data-note="Designed and integrated REST APIs">
+                <i class="fas fa-cloud"></i> RESTful APIs
+            </div>
+        </div>
+
+        <!-- Developer Tools -->
+        <h3 class="skill-category">Developer Tools</h3>
+        <div class="skills-grid">
+            <div class="skill" data-note="Primary code editor for all projects">
+                <i class="fas fa-code"></i> VS Code
+            </div>
+            <div class="skill" data-note="Used for Java and Spring development">
+                <i class="fas fa-code"></i> IntelliJ
+            </div>
+            <div class="skill" data-note="Java development and debugging">
+                <i class="fas fa-code"></i> Eclipse
+            </div>
+            <div class="skill" data-note="Tested APIs for projects">
+                <i class="fas fa-tools"></i> Postman
+            </div>
+            <div class="skill" data-note="Version control for all projects">
+                <i class="fab fa-git"></i> Git
+            </div>
+            <div class="skill" data-note="Hosted portfolio and project repos">
+                <i class="fab fa-github"></i> GitHub
+            </div>
+        </div>
+
+        <!-- Cloud and Database -->
+        <h3 class="skill-category">Cloud and Database</h3>
+        <div class="skills-grid">
+            <div class="skill" data-note="Deployed apps and managed storage">
+                <i class="fas fa-cloud"></i> AWS
+            </div>
+            <div class="skill" data-note="Designed relational databases">
+                <i class="fas fa-database"></i> MySQL
+            </div>
+            <div class="skill" data-note="Database management and queries">
+                <i class="fas fa-database"></i> HeidiSQL
+            </div>
+            <div class="skill" data-note="Worked with NoSQL databases">
+                <i class="fas fa-database"></i> MongoDB
+            </div>
+            <div class="skill" data-note="Managed cloud storage solutions">
+                <i class="fas fa-cloud-upload-alt"></i> DriveHQ
+            </div>
+        </div>
+
+        <!-- DevOps Tools -->
+        <h3 class="skill-category">DevOps Tools</h3>
+        <div class="skills-grid">
+            <div class="skill" data-note="Learning containerization for workflows">
+                <i class="fas fa-docker"></i> Docker
+            </div>
+            <div class="skill" data-note="Basic proficiency in system admin">
+                <i class="fab fa-linux"></i> Linux
+            </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <h3 class="skill-category">Soft Skills</h3>
+        <div class="skills-grid">
+            <div class="skill" data-note="Effective in team projects">
+                <i class="fas fa-users"></i> Teamwork
+            </div>
+            <div class="skill" data-note="Strong analytical skills for DSA">
+                <i class="fas fa-brain"></i> Problem-solving
+            </div>
+            <div class="skill" data-note="Clear client and team communication">
+                <i class="fas fa-comments"></i> Communication
+            </div>
+        </div>
+
+        <!-- Coursework -->
+        <h3 class="skill-category">Coursework</h3>
+        <div class="skills-grid">
+            <div class="skill" data-note="Database design and management">
+                <i class="fas fa-database"></i> DBMS
+            </div>
+            <div class="skill" data-note="Algorithms and data structures">
+                <i class="fas fa-sitemap"></i> DSA
+            </div>
+            <div class="skill" data-note="Operating system concepts">
+                <i class="fas fa-cogs"></i> OS
+            </div>
+            <div class="skill" data-note="Networking fundamentals">
+                <i class="fas fa-network-wired"></i> CN
+            </div>
+            <div class="skill" data-note="Core programming principles">
+                <i class="fas fa-code"></i> Programming
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Experience Section -->
+<section id="experience" class="section experience">
+    <div class="container">
+        <h2><i class="fas fa-briefcase"></i> Experience</h2>
+        <div class="experience-item" data-note="Explore implementation" data-link="https://legallawguru.com/">
+            <h3>Front-End Developer - LegalLawGuru.com</h3>
+            <p class="date"><em>Nov 2023 - Apr 2024</em></p>
+            <p class="description">Designed UI/UX for a chatbot-driven legal web app using ReactJS and optimized workflows.</p>
+        </div>
+    </div>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="section projects">
+    <div class="container">
+        <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+        <p class="subtitle">Explore my creative and impactful projects below!</p>
+        <div class="projects-grid">
+            <div class="project-card" data-achievement="Featured Project">
+                <img src="PayRoll.jpeg" alt="Payroll Management System" class="project-img">
+                <div class="project-info">
+                    <h3><a href="https://github.com/Hareesh-Ediga/Pay_roll_management" target="_blank">Payroll Management System</a></h3>
+                    <p>Built with React.js and Firebase to manage employee records and salaries.</p>
+                </div>
+            </div>
+            <div class="project-card" data-achievement="Automation Excellence">
+                <img src="Testing.jpeg" alt="Automation Testing - Coursera" class="project-img">
+                <div class="project-info">
+                    <h3><a href="https://github.com/Hareesh-Ediga?tab=repositories" target="_blank">Automation Testing - Coursera</a></h3>
+                    <p>Automated testing with Selenium and TestNG for login and course selection.</p>
+                </div>
+            </div>
+            <div class="project-card" data-achievement="Blockchain Innovation">
+                <img src="BlockChain.jpeg" alt="Blockchain Credential System" class="project-img">
+                <div class="project-info">
+                    <h3><a href="https://github.com/Hareesh-Ediga/Blockchain-Based-Academic-Credential-Verification-System" target="_blank">Blockchain Based Academic Credential VerificationSystem</a></h3>
+                    <p>Developed a secure academic credential system using Java and MySQL.</p>
+                </div>
+            </div>
+        </div>
+        <p class="more-projects">Want to see more? <a href="https://github.com/Hareesh-Ediga?tab=repositories" target="_blank">Explore all my projects on GitHub</a></p>
+    </div>
+</section>
+ <!-- Contact Section -->
+<section id="contact" class="section contact">
+    <div class="container">
+        <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+        <div class="contact-box">
+            <!-- Form (Left Side) -->
+            <div class="contact-form">
+                <form id="contact-form">
+                    <input type="text" id="from_name" placeholder="Your Name" required>
+                    <input type="email" id="sender_email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Type your message here..." rows="5" required></textarea>
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+                </form>
+            </div>
+            <!-- Details (Right Side) -->
+            <div class="contact-details">
+                <h3>Get in Touch</h3>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:ehareesh07@gmail.com">ehareesh07@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> +91 8867061307</p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/hareesh-ediga" target="_blank">linkedin.com/in/hareesh-ediga</a></p>
+                <p><i class="fab fa-github"></i> <a href="https://github.com/Hareesh-Ediga" target="_blank">github.com/Hareesh-Ediga</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Hareesh Ediga. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
