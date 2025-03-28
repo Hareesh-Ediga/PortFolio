@@ -44,6 +44,24 @@ document.getElementById('show-photo-btn').addEventListener('click', function() {
     photo.classList.add('visible');
     this.style.display = 'none'; // Hide button after click
 });
+// Set last updated date
+document.getElementById('update-date').textContent = new Date().toLocaleDateString();
+
+// Update photo reveal function to show greeting
+document.getElementById('show-photo-btn').addEventListener('click', function() {
+    const photo = document.getElementById('profile-photo');
+    const greeting = document.getElementById('greeting-message');
+    
+    photo.classList.add('visible');
+    this.style.display = 'none';
+    
+    // Show greeting after a slight delay
+    setTimeout(() => {
+        greeting.textContent = "Nice to see you!";
+        greeting.classList.add('visible');
+    }, 500);
+});
+
 
 // Redirect to link on experience item click
 document.querySelectorAll('.experience-item').forEach(item => {

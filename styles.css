@@ -43,6 +43,43 @@ header {
     position: relative;
     overflow: hidden;
 }
+/* Last Updated Styling */
+.last-updated {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    z-index: 2;
+}
+
+/* Greeting Message Styling */
+.greeting-message {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-top: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.greeting-message.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Visitor Counter Styling */
+.visitor-counter {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 2px 8px;
+    border-radius: 10px;
+}
 
 /* Optional: Add a blurred background image */
 header::before {

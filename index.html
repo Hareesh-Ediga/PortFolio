@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <!-- Add type="module" to your script tags -->
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="visitor-counter.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
@@ -18,9 +23,11 @@
 <body>
    <!-- Header Section -->
 <header>
+    <div class="last-updated">Last Updated: <span id="update-date"></span></div>
+    <div class="visitor-counter">Visitors: <span id="visitor-count">55</span></div>
     <div class="container">
         <h1>Hareesh Ediga</h1>
-        <p>Full-Stack Developer | DevOps Enthusiast</p>
+        <p>Full-Stack Developer | DevOps Enthusiast | AI Hobbyists</p>
         <nav class="glass-nav">
             <ul>
                 <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
@@ -39,13 +46,14 @@
         <h2><i class="fas fa-user"></i> About Me</h2>
         <div class="about-content">
             <div class="about-text">
-                <p class="intro">Hello! I’m Hareesh Ediga, an IT enthusiast and engineering student with a flair for crafting innovative solutions. I’m skilled in <span class="highlight">full-stack development</span>, wielding tools like ReactJS, Spring Boot, and AWS, and I’m passionate about <span class="highlight">DevOps</span> and <span class="highlight">blockchain integration</span>. My journey blends creativity with technology to build impactful software.</p>
-                <p class="question">Curious to see who’s behind the code?</p>
+                <p class="intro">Hello! I'm Hareesh Ediga, an IT enthusiast and engineering student with a flair for crafting innovative solutions. I'm skilled in <span class="highlight">full-stack development</span>, wielding tools like ReactJS, Spring Boot, and AWS, and I'm passionate about <span class="highlight">DevOps</span>, <span class="highlight">blockchain integration</span>, and <span class="highlight">AI technologies</span>. I'm enthusiastic about learning AI tools and exploring their applications. I also enjoy content creation, sharing my knowledge through various platforms. My journey blends creativity with technology to build impactful software.</p>
+                <p class="question">Curious to see who's behind the code?</p>
                 <button id="show-photo-btn" class="reveal-btn">Yes, show me!</button>
             </div>
             <div class="photo-container">
                 <img src="Hareesh PassPhoto.png" alt="Hareesh Ediga" class="profile-photo" id="profile-photo">
             </div>
+            <div class="greeting-message" id="greeting-message"></div>
         </div>
     </div>
 </section>
